@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:coverflow="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ggh"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:layout_below="@+id/ggg"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/ggh"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:padding="7dp"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/tvA"
+                    android:text="Song 1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/tvB"
+                    android:text="Song 2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/tvC"
+                    android:text="Song 3"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/tvD"
+                    android:text="Song 4"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:padding="7dp"
+                android:visibility="gone"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Song 5"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Song 6"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Song 7"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Song 8"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:numColumns="3"
+            android:visibility="visible"
+            android:id="@+id/gridAlbumSongs">
+
+        </GridView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/gridAlbumSongs">
+        <it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow
+            android:id="@+id/coverflow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            coverflow:coverHeight="100dp"
+            coverflow:coverWidth="120dp"
+            coverflow:maxScaleFactor="1.5"
+            coverflow:reflectionGap="0px"
+            coverflow:rotationThreshold="0.5"
+            coverflow:scalingThreshold="0.5"
+            android:visibility="gone"
+            coverflow:spacing="0.6" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Purchase Album"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:drawableTop="@drawable/buy_now"/>
+        </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:text="The Mixtape: Intro - 1 of 16"/>
+    </LinearLayout>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:id="@+id/seekBar"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/seekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00/00:00"
+
+            android:id="@+id/tvSeekText"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/previous"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btnPlay"
+            android:layout_toStartOf="@+id/btnPlay" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/play"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnPlay" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/forward"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnPlay"
+            android:layout_toEndOf="@+id/btnPlay" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/like1"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/imageView2"
+            android:layout_toStartOf="@+id/imageView2" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/unlike1"
+            android:id="@+id/imageView2"
+            android:layout_alignTop="@+id/textView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/sdfs"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imgShare" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eq1"
+            android:id="@+id/imgEqualizer"
+            android:layout_centerVertical="true"
+            android:layout_above="@+id/textView2"
+            android:layout_toLeftOf="@+id/imgWebSite"
+            android:layout_toStartOf="@+id/imgWebSite" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/shop"
+            android:layout_alignBottom="@+id/imgFB"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView2"
+            android:id="@+id/imgShop"
+            android:layout_toEndOf="@+id/textView2" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/website"
+            android:layout_alignBottom="@+id/imgFB"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/imgFB"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/imgFB"
+            android:id="@+id/imgWebSite" />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:src="@drawable/social_facebook"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/imgInstagram"
+            android:layout_toStartOf="@+id/imgInstagram"
+            android:id="@+id/imgFB" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/instagram"
+            android:id="@+id/imgInstagram"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25% OFF"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:id="@+id/textView2"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/imgShare"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

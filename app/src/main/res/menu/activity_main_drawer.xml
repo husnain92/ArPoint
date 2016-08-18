@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home" android:icon="@drawable/home"
+            android:title="Home"
+            android:checked="true"/>
+        <item android:id="@+id/nav_merch" android:icon="@drawable/shop"
+            android:title="Merch" />
+        <item android:id="@+id/nav_artist_profile" android:icon="@drawable/profile"
+            android:title="Artist's Profile" />
+        <item android:id="@+id/nav_tos" android:icon="@drawable/documents"
+            android:title="Terms of Use" />
+        <item android:id="@+id/nav_pp" android:icon="@drawable/documents"
+            android:title="Privacy Policy" />
+        <item android:id="@+id/nav_logout" android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="2dp"
+    android:background="#ffffff">
+
+
+    <RelativeLayout
+        android:id="@+id/ggg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000000"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="LOGIN"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etLoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:hint="Email Address"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/ggg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etLoginPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Password"
+        android:layout_below="@+id/etLoginEmail"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:layout_below="@+id/etLoginPass"
+        android:layout_alignLeft="@+id/etLoginPass"
+        android:layout_alignStart="@+id/etLoginPass"
+        android:id="@+id/btnLogin"
+        android:layout_marginTop="40dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:layout_below="@+id/ggg"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

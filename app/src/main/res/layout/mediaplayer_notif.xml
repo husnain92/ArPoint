@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ar_logo"
+            android:id="@+id/imgNotifMedia"
+            android:visibility="gone"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Song Name"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:id="@+id/tvSongNamePlayerNotif"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/seekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00/00:00"
+
+            android:id="@+id/tvSeekTextNotif"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/previous"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btnPlayNotif"
+            android:layout_toStartOf="@+id/btnPlayNotif"
+            android:id="@+id/btnSeekBackwardNotif"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/pause"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnPlayNotif" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/forward"
+            android:layout_alignParentTop="true"
+            android:id="@+id/btnSeekForwardNotif"
+            android:layout_toRightOf="@+id/btnPlayNotif"
+            android:layout_toEndOf="@+id/btnPlayNotif" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

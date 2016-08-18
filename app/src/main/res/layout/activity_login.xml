@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="2dp"
+    android:background="#ffffff">
+
+
+    <RelativeLayout
+        android:id="@+id/ggg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000000"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="LOGIN"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/arpoint_logo"
+        android:layout_below="@+id/view2"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/etLoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:hint="Email Address"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="textEmailAddress"
+        android:layout_above="@+id/etLoginPass"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etLoginPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_alignLeft="@+id/etLoginEmail"
+        android:layout_alignStart="@+id/etLoginEmail" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#000000"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/tvRegNow"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ggg"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:id="@+id/view2" />
+
+
+    <TextView
+        android:id="@+id/tvRegNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Not Registered?\nSign Up Now!"
+        android:textColor="#3638d2"
+
+        android:textSize="17sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="85dp" />
+
+</RelativeLayout>
